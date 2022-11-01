@@ -1,2 +1,4 @@
-# mtg_wordle_backend
+# MTG world-like web app
+
+
  
