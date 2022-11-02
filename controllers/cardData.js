@@ -2,8 +2,8 @@ const cardDataRouter = require('express').Router()
 // const fs = require('fs');
 // const path = require('path');
 // const axios = require('axios');
-// const allCardData = require('../card_data/default-cards-20221023090511.json')
-const allCardData = require('../card_data/uusi.json')
+const allCardData = require('../card_data/default-cards-20221023090511.json')
+// const allCardData = require('../card_data/uusi.json')
 const allSets = require('../card_data/allSets.json')
 
 cardDataRouter.get('/', async (request, response) => {
