@@ -1,0 +1,303 @@
+/* Image on mouse hover over - start */
+
+/* #image-container-0 {
+  transition: transform .1s;
+  display: none;
+  z-index: 2;
+  position: absolute;
+} */
+
+/* #image-size {
+  width: 300px;
+  height: auto;
+} */
+
+/* .hover {
+  
+} */
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed #000;
+  padding-bottom: -1px;
+}
+
+/* .hover:hover #image-container-0 {
+  display: block;
+} */
+
+/* Image on mouse hover over - end */
+
+body {
+  font-family: 'calibri', sans-serif;
+  font-weight: 600;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+h1 {
+  font-style: italic;
+}
+
+.loading-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(27, 46, 46);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* Modal content - start */
+
+.modal-background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: rgb(128, 128, 128);
+  border: 1px solid;
+  width: 70%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 3rem;
+  height: 70%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+/* w3schools modal example close button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#modal-header-text {
+  font-size: 30px;
+}
+
+.modal-body {
+  padding: 20px;
+  border-top: 1px solid;
+}
+
+.modal-footer {
+  padding: 20px;
+  border-top: 1px solid;
+}
+
+/* Modal content - end */
+
+.header {
+  display: flex;
+}
+
+.info-button {
+  /* border-radius: 200px; */
+  /* padding: 6px; */
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+}
+
+.config-button {
+  /* border-radius: 200px; */
+  /* padding: 6px; */
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  font-size: 10px;
+  /* border: 1px solid red; */
+}
+
+.set-image {
+  width: 50px;
+  height: 50px;
+}
+
+.mtg-logo {
+  width: 278px;
+  height: 94.5px;
+}
+
+.doomguy {
+  width: 94.5px;
+  height: 94.5px;
+}
+
+.set-container {
+  display: flex;
+  align-items: center;
+}
+
+.guess-form-container {
+  display: flex;
+  width: 1000px;
+  max-width: 85%;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.guess-form-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+
+.guess-form-input {
+  position: relative;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.guess-form-ul {
+  max-height: 400px;
+  overflow: auto;
+  background-color: white;
+  margin: 0px;
+  list-style-type: none;
+  position: absolute;
+  padding-left: 0pt;
+  width: 100%;
+}
+
+.guess-form-li {
+  border-bottom: 1px solid lightgray;
+  padding: 1px 9px;
+}
+
+.active-guess {
+  border-bottom: 1px solid lightgray;
+  background-color: lightblue;
+  padding: 1px 9px;
+}
+
+.guess-form-li:hover {
+  border-bottom: 1px solid lightgray;
+  background-color: lightblue;
+  padding: 1px 9px;
+}
+
+.correct {
+  background-color: rgba(50,205,50, 0.5);
+}
+
+.correct-almost {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+table {
+  border-collapse: collapse;
+  width: 1000px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guess-table td {
+  border: 1px solid;
+  padding: 5px;
+  text-align: center;
+  min-width: 100%;
+  display: table-cell;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; */
+}
+
+.indicator-bar {
+  background: linear-gradient(0deg, red);
+}
+
+.table-set-centered {
+  margin: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess-table th {
+  text-align: center;
+  /* white-space: nowrap; */
+  /* text-transform: uppercase; */
+}
+
+#set-column {
+  width: auto;
+  justify-items: left;
+}
+
+.table-set-image {
+  height: 30px;
+  width: 30px;
+  margin-right: 1px;
+}
+
+@keyframes winner {
+  0% { color: blue; }
+  50% { color: green; }
+  100% { color: blue; }
+}
+
+.winner {
+  animation-name: winner;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loser {
+  0% { color: red; }
+  50% { color: orange; }
+  100% { color: red; }
+}
+
+.loser {
+  animation-name: loser;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.stat-table {
+  border-collapse: collapse;
+  margin-left: 0;
+  min-width: 200px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.stat-td-stat {
+  padding-left: 5px;
+}
